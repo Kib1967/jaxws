@@ -4,6 +4,11 @@
 	
 	<display-name>javaws-example</display-name>
 	
+	<!--
+		Again, this is a very JBoss-specific way of doing this.
+		Ordinarily, CXF WebServices would be configured using Spring, but we're relying on JBoss' own CXF module.
+		An alternative would be to introduce Spring into your JBoss deployment as a module. But this works fine.
+	-->
 	<servlet>
 		<servlet-name>GetSquare</servlet-name>
 		<servlet-class>com.mckibbin.jaxws.impl.GetSquareImpl</servlet-class>

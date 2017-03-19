@@ -96,6 +96,8 @@
 	</build>
 
 	<dependencies>
+		<!-- CXF dependencies are in provided scope because JBoss uses CXF internally
+		     See http://cxf.apache.org/docs/application-server-specific-configuration-guide.html#ApplicationServerSpecificConfigurationGuide-JBossApplicationServer -->
 		<dependency>
 			<groupId>org.apache.cxf</groupId>
 			<artifactId>cxf-rt-frontend-jaxws</artifactId>

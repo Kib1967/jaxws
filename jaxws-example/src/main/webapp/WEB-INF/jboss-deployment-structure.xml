@@ -3,6 +3,7 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<deployment>
 
+		<!-- Read in conjunction with notes in POM about CXF dependencies -->
 		<dependencies>
 			<module name="org.apache.cxf" export="true" />
 			<module name="org.apache.cxf.impl" export="true" />
